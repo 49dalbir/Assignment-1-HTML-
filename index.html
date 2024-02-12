@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<!--head section-->
+
+<head>
+    <!--meta tags-->
+    <meta charset="utf-8">
+    <meta name="author" content="Dalbir Singh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title-->
+    <title>Pizza Mania</title>
+    <!--link for css-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link for google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="logo" href="images/logo.jpg">
+    <!--link for boxicons website for navigation bar icons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<!--body section-->
+
+<body>
+    <!--header section-->
+    <header>
+        <a href="#" class="logo"><img src="images/baselogo.png" width="100" length="auto" alt="logo"></a>
+        <!--navigation bar-->
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order">Order</a></li>
+        </ul>
+        <div class="h-icons">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="#"><i class='bx bx-cart'></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <!--main section-->
+
+    <main>
+        <!--home section-->
+        <section class="home" id="home">
+            <div class="home-text">
+                <h1><span>Welcome to Pizza Mania!</span> <br>One place for all recipes of mouthwatering pizzas.</h1>
+                <p>Here passion meets perfection in every slice! At Pizza Mania,<br> we believe that great pizza is an
+                    art form, crafted with love <br>and the finest ingredients. Whether you're a traditional Margherita
+                    enthusiast<br> or an adventurous toppings explorer, our diverse menu caters to all taste buds.<br>
+                    Immerse yourself in a world of flavor, where every pizza is a masterpiece and each bite tells a
+                    story. </p>
+                <a href="#" class="button">Choose Pizza</a>
+            </div>
+            <div class="home-img">
+                <img src="images/pizza-png-19325.png" alt="home">
+            </div>
+        </section>
+
+        <!--menu section-->
+        <section class="menu" id="menu">
+            <div class="main-text">
+                <h2>Our Specials</h2>
+                <p>Here are our best pizzas with every exquisite taste <br> from around the world.</p>
+            </div>
+            <div class="menu-content">
+                <!--image from https://www.fornopizzeria.ca/menu/-->
+                <img src="images/pizza menu.jpg">
+            </div>
+        </section>
+        <!--order section-->
+        <section class="order" id="order">
+            <div class="form1">
+                <!--form 1-->
+                <h3>Choose your Pizza :</h3>
+                <form required>
+                    <select>
+                        <option>-- Select Pizza --</option>
+                        <option value="1" label="Margherita">Margherita</option>
+                        <option value="2" label="Salami">Salami</option>
+                        <option value="3" label="Prosciutto">Prosciutto</option>
+                        <option value="4" label="Chicken Pesto">Chicken Pesto</option>
+                        <option value="5" label="House Special">House Special</option>
+                        <option value="6" label="Emma's Choice">Emma's Choice</option>
+                        <option value="7" label="Pepperoni">Pepperoni</option>
+                        <option value="8" label="Mixed Veggies">Mixed Veggies</option>
+                        <option value="9" label="Truffel Lover">Truffel Lover</option>
+                        <option value="10" label="Wiseguy">Wiseguy</option>
+                        <option value="11" label="Chicken Teriyaki">Chicken Teriyaki</option>
+                        <option value="12" label="Fire Roasted Garlic">Fire Roasted Garlic</option>
+                    </select>
+                </form>
+            </div>
+            <!--form 2-->
+            <div class="form2">
+                <h3>Select Size :</h3>
+                <form required>
+                    <input type="radio" id="regular" name="1">
+                    <label for="regular">Regular</label><br>
+                    <input type="radio" id="large" name="1">
+                    <label for="large">Large</label><br>
+                    <br>
+                    <label for="quantity">Number of Pizzas : </label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="8" value="1">
+                    <br>
+                    <label for="shape">Shape of Pizza : </label>
+                    <select>
+                        <option>-- select shape --</option>
+                        <option value="1" label="Round">Round</option>
+                        <option value="2" label="Square">Square</option>
+                    </select>
+                    <br>
+                    <label for="crust type">Select Crust : </label>
+                    <select>
+                        <option value="1" label="Thin Crust">Thin Crust</option>
+                        <option value="2" label="Stuffed Crust">Stuffed Crust</option>
+                    </select>
+                    <br>
+                    <label for="number of slices">Number of Slices : </label>
+                    <select>
+                        <option value="1">6 Slices</option>
+                        <option value="2">8 Slices</option>
+                        <option value="3">12 Slices</option>
+                    </select>
+
+                </form>
+            </div>
+            <!--form 3-->
+            <div class="form3">
+                <h3>Billing Address :</h3>
+                <form required>
+                    <label for="fname"><i class="fname"></i> Full Name</label><br>
+                    <input type="text" id="fname" name="fullname" placeholder="Harry A. William"><br>
+                    <label for="email"><i class="Email"></i> Email</label><br>
+                    <input type="text" id="email" name="email" placeholder="harry@example.com"><br>
+                    <label for="adr"><i class="Address"></i> Address</label><br>
+                    <input type="text" id="adr" name="address" placeholder="5N 15th Street"><br>
+                    <label for="city"><i class="City"></i> City</label><br>
+                    <input type="text" id="city" name="city" placeholder="Toronto"><br>
+                    <label for="state">State</label><br>
+                    <input type="text" id="state" name="state" placeholder="ON"><br>
+                    <label for="postcode">Postal Code</label><br>
+                    <input type="text" id="postcode" name="postcode" placeholder="a1b 1b2"><br>
+                </form>
+                <!--form 4-->
+                <div class="form4">
+                    <h3>Payment :</h3><br>
+                    <form required>
+                        <label for="cname">Name on Card</label><br>
+                        <input type="text" id="cname" name="cardname" placeholder="Harry William"><br>
+                        <label for="cnum">Credit/Debit card number</label><br>
+                        <input type="text" id="cnum" name="cardnumber" placeholder="1111-2222-3333-4444"><br>
+                        <label for="expmonth">Exp Month</label><br>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="September"><br>
+                        <label for="expyear">Exp Year</label><br>
+                        <input type="text" id="expyear" name="expyear" placeholder="2026"><br>
+                        <label for="cvv">CVV</label><br>
+                        <input type="text" id="cvv" name="cvv" placeholder="123"><br>
+                    </form>
+                </div>
+            </div><br>
+            <div class="button2">
+                <input type="submit" value="Continue to checkout" class="button">
+            </div>
+        </section>
+    </main>
+
+    <!--footer section-->
+
+    <footer>
+        <p><em>
+                <center>created by Dalbir Singh</center>
+            </em></p>
+    </footer>
+</body>
+
+</html>
